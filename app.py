@@ -6,6 +6,9 @@ app=Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/')
+def Destinasi():
+    return render_template('Destinasi.html')
 
 if __name__ == '__main__':
   
