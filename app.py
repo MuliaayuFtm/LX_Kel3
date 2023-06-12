@@ -1,20 +1,31 @@
-from flask import Flask,redirect,url_for,render_template,request
-from pymongo import MongoClient
-import jwt
-from datetime import datetime, timedelta
-import hashlib
-from werkzeug.utils import secure_filename
+from flask import Flask, render_template, request
+app = Flask(__name__,template_folder="template")
 
-app=Flask(__name__)
-
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('home.html')
+     return render_template('home.html')
+ 
+@app.route("/about")
+def about():
+     return render_template('about.html')
 
-@app.route('/')
-def Destinasi():
-    return render_template('Destinasi.html')
+@app.route("/login")
+def login():
+     return render_template('login.html')
 
-if __name__ == '__main__':
-  
-   app.run('0.0.0.0', port=5000,debug=True)
+@app.route("/register")
+def register():
+     return render_template('register.html')
+
+@app.route("/reservasi")
+def reservasi():
+     return render_template('reservasi.html')
+ 
+ 
+ 
+if __name__ == "__main__":
+     app.run(debug=True ,port=8080,use_reloader=False)
+
+
+
+
