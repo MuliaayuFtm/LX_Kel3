@@ -28,9 +28,9 @@ def login():
         password = request.form["password"]
 
         # Proses otentikasi pengguna
-        user = users_collection.find_one({"email": email, "password": password})
+        users = users_collection.find_one({"email": email, "password": password})
 
-        if user:
+        if users:
             # login sukses
             return render_template("About.html")
         else:
@@ -38,6 +38,7 @@ def login():
             return "Email atau password salah"
 
     return render_template("login.html")
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -62,25 +63,6 @@ def register():
         return redirect(url_for("login"))
 
     return render_template("register.html")
-
-
-@app.route("/halaman admin", methods=["GET", "POST"])
-def admin():
-    if request.method == "POST":
-        email = request.form["email"]
-        password = request.form["password"]
-
-        # Proses otentikasi pengguna
-        user = users_collection.find_one({"email": email, "password": password})
-
-        if user:
-            # login sukses
-            return render_template("halaman admin.html")
-        else:
-            # login gagal
-            return "Email atau password salah"
-
-    return render_template("login admin.html")
 
 
 
@@ -115,9 +97,9 @@ def pemesanan():
     return render_template("pemesanan.html")
 
 
-@app.route("/layout")
-def layout():
-    return render_template("layout.html")
+@app.route("/riwayat pemesanan")
+def riwayat():
+    return render_template("riwayat pemesanan.html")
 
 
 if __name__ == "__main__":
