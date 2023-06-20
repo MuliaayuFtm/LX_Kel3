@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <title>TRAVELIN | Home</title>
+    <title>Home Page</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,11 @@
     <!--Botstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.0/dist/themes/bulma/bootstrap-table-bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/themes/bulma/bootstrap-table-bulma.min.js"></script>
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
      <!-- JS -->
@@ -30,75 +34,53 @@
 
 </head>
 
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
   <div class="container">
-      <a class="navbar-brand" href="#">TRAVELIN</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/about">About Me</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/destinasi">Destinasi</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/reservasi">Reservasi</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/login">Login</a>
-              </li>
-              <li class="nav-item">
-                  <a class="btn btn-light" href="/register">Register</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
-      <!-- akhir navbar -->
+    <a class="navbar-brand" href="#">TRAVELIN Ciamis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- crousel -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="static/img/kotabdg.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="static/img/jakarta.jpg" class="d-block w- 100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="static/img/tangerang.jpg" class="d-block w- 100" alt="...">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="{{('register')}}">register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{('login')}}">login</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <!-- Akhir crousel -->
+      </nav>
+      <!-- akhir navbar -->
 
+      <div class="card" style="width: 18rem;">
+        <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1502887126/kckcyflrxoaajmtmhm4g.jpg" alt="Image" height="250" width="1300">
+        
+       
+        </div>
+      </div>
+
+      
       <!-- about -->
        <!-- About Me -->
+
        <section id="about">
         <div class="container">
           <div class="row text-center mb-5">
             <div class="col">
-              <h2>About US</h2>
+              <h2>Visi dan Misi</h2>
             </div>
           </div>
           <div class="row justify-content-center fs-5 text-center">
             <div class="col-4">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam rem expedita 
-                accusantium, porro dolore officiis eveniet magni? Perferendis delectus in minus
-                 porro culpa consequuntur. Nobis illo molestias odio tempora ab?</p>
+              <p>Visi</p>
+              <p>Menjadi perusahaan travel terbaik di dunia dengan menciptakan pengalaman wisata yang luar biasa bagi pelanggan dan mengoptimalkan teknologi untuk meningkatkan kualitas layanan.</p>
             </div>
             <div class="col-4">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam rem expedita 
-                accusantium, porro dolore officiis eveniet magni? Perferendis delectus in minus
-                 porro culpa consequuntur. Nobis illo molestias odio tempora ab?
+              <p>Misi</p>
+              <p>Menjadi pilihan utama pelanggan dengan pelayanan terbaik, menghadirkan inovasi-inovasi baru untuk memenuhi kebutuhan pelanggan, dan menjaga kualitas layanan serta memperbaiki kekurangan yang ada.
               </p>
             </div>
           </div>
@@ -106,6 +88,34 @@
 
       </section>
       <!-- akhiir about -->
+    </div>
+  </div>
+</div>
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+               <p>Call Center Contact Us Konsumen </p>
+                <table>
+                  <tr>
+                    <th>Nama</th>
+                    <th>No whatspp </th>
+  
+                  </tr>
+                  <tr>
+                    <td>Nikson Sihombing</td>
+                    <td>082297791315</td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Melafebri</td>
+                    <td>081532021267</td>
+                    
+                  </tr>
+                </table>
+      
+        
+        
     
     
 </body>
